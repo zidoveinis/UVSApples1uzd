@@ -3,7 +3,10 @@
   "extends": "./tsconfig.base.json",
   "compilerOptions": {
     "outDir": "./out-tsc/app",
-    "types": []
+    "types": []  ,
+    "experimentalDecorators": true,
+    "target": "es2015",
+    "module": "esnext"
   },
   "files": [
     "src/main.ts",
@@ -11,5 +14,8 @@
   ],
   "include": [
     "src/**/*.d.ts"
-  ]
+  ],
+  "angularCompilerOptions": {
+    "enableIvy": false
+  }
 }
